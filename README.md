@@ -1,24 +1,23 @@
-# README
+# Bottomley's Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User Stories
+---
+* Admin access
+  * Admin user can edit blogs
+  * Admin user has 'draft' blogs
+  * Admin user can publish draft
 
-Things you may want to cover:
+* Public access
+  * Can view all published blogs
+  * Can comment as a Guest and default profile picture
+  * Can like blogs
 
-* Ruby version
+* Registered user access
+  * Can view all published blogs
+  * Can comment and comments will have users username and personalised profile picture
+  * Can like blogs
+  * Can view their own profile page and see blogs they've commented on and liked
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Published blogs:
+  * Will be listed as cards including the topic, title, description, date published and author, displayed in reverse 
+  * button to select particular topic
