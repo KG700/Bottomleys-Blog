@@ -6,11 +6,11 @@ RSpec.describe Blog, type: :model do
       @blog = create(:blog)
     end
 
-  context 'title' do
+  it "is valid with valid attributes" do
+    expect(@blog).to be_valid
+  end
 
-    it "is valid with valid attributes" do
-      expect(@blog).to be_valid
-    end
+  context 'title' do
 
     it "is not valid without a title" do
       untitled_blog = build(:blog, title: "")
@@ -29,9 +29,27 @@ RSpec.describe Blog, type: :model do
     end
 
   end
-  # title present
-  # title minimum length
-  # title maximum length
+
+  context 'description' do
+
+    it "is not valid without a description" do
+      no_description_blog = build(:blog, description: "")
+      expect(no_description_blog).to_not be_valid
+    end
+
+    it "is not valid if description is shorter than 10 characters" do
+      short_description = "a" * 9
+      short_description_blog = build(:blog, description: short_description)
+      expect(short_description_blog).to_not be_valid
+    end
+
+    it "is not valid if description is longer than 300 characters" do
+      long_description = "a" * 301
+      long_description_blog = build(:blog, description: long_description)
+      expect(long_description_blog).to_not be_valid
+    end
+
+  end
   # description present
   # description miniumum length
   # description maximum length
