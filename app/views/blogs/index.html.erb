@@ -1,1 +1,5 @@
-<h1>Welcome to Bottomley's Blog</h1>
+<ul>
+  <% @blogs.each do |blog| %>
+    <li><%= blog %></li>
+  <% end %>
+</ul>

@@ -50,8 +50,5 @@ RSpec.describe Blog, type: :model do
     end
 
   end
-  # description present
-  # description miniumum length
-  # description maximum length
 
 end

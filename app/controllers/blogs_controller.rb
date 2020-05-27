@@ -5,6 +5,11 @@ class BlogsController < ApplicationController
   end
 
   def index
+    @blogs = [
+      "Opinionated blog about politics",
+      "Fascinating blog about the environment",
+      "Interesting blog about animal rights"
+    ]
   end
 
   def create
@@ -15,6 +20,10 @@ class BlogsController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def show
+    @blog = Blog.find(params[:id])
   end
 
   private
