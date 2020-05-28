@@ -6,8 +6,16 @@ RSpec.describe Blog, type: :model do
       @blog = create(:blog)
     end
 
-  it "is valid with valid attributes" do
-    expect(@blog).to be_valid
+  context 'valid blogs' do
+    it "is valid with valid attributes" do
+      expect(@blog).to be_valid
+    end
+    # it "returns a list of blogs" do
+    #   blogs = Blog.all
+    #   p blogs
+    #   expect(blogs).to include 'Interesting title'
+    #   expect(blogs).to include 'Interesting description'
+    # end
   end
 
   context 'title' do

@@ -1,16 +1,17 @@
-feature 'blog User Stories'
+feature 'User Stories' do
 
 # As a blogger
 # So I can share my unique and interesting opionions
 # I would like to be able to create a new blog
-feature 'create a new blog' do
-  scenario 'user can create a new blog' do
-    visit 'blogs/new'
-    fill_in 'blog[title]', with: 'New Blog'
-    fill_in 'blog[description]', with: 'This is a new blog'
-    click_button 'Create Blog'
+  feature 'create a new blog' do
+    scenario 'user can create a new blog' do
+      visit 'blogs/new'
+      fill_in 'blog[title]', with: 'New Blog'
+      fill_in 'blog[description]', with: 'This is a new blog'
+      click_button 'Create Blog'
 
-    expect(page).to have_content 'New Blog'
+      expect(page).to have_content 'New Blog'
+    end
   end
 
   # As a user
