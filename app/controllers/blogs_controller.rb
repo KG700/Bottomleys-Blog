@@ -5,11 +5,12 @@ class BlogsController < ApplicationController
   end
 
   def index
-    @blogs = [
-      "Opinionated blog about politics",
-      "Fascinating blog about the environment",
-      "Interesting blog about animal rights"
-    ]
+    @blogs = Blog.all
+    # @blogs = [
+    #   "Opinionated blog about politics",
+    #   "Fascinating blog about the environment",
+    #   "Interesting blog about animal rights"
+    # ]
   end
 
   def create

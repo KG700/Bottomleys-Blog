@@ -1,5 +1,7 @@
 # Bottomley's Blog
 
+Read about unique and informed opinions on a range of topics including politics, environmental issues & animal rights
+
 User Stories
 ---
 * Admin access
@@ -19,5 +21,5 @@ User Stories
   * Can view their own profile page and see blogs they've commented on and liked
 
 * Published blogs:
-  * Will be listed as cards including the topic, title, description, date published and author, displayed in reverse 
+  * Will be listed as cards including the topic, title, description, date published and author, displayed in reverse
   * button to select particular topic
