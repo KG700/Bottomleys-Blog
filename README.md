@@ -1,6 +1,6 @@
 # Bottomley's Blog
 
-Read about unique and informed opinions on a range of topics including politics, environmental issues & animal rights
+Read about unique and informed opinions on a range of topics including politics, environmental issues & animal rights.
 
 User Stories
 ---
